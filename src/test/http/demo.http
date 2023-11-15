@@ -1,0 +1,75 @@
+# demo
+
+
+###
+# @name createNewCustomer
+POST localhost:8080/api/v1/customer
+Content-Type: application/json
+
+{
+  "name": "Mariam",
+  "password": "sdfasdf",
+  "id": 3
+}
+
+###
+# @name getCustomers
+GET localhost:8080/api/v1/customer/all
+
+###
+# @name updateCustomer
+PUT localhost:8080/api/v1/customer
+Content-Type: application/json
+
+{
+  "name": "New Name",
+  "id": 10000,
+  "password": "new_password"
+}
+
+###
+# @name deleteCustomer
+DELETE localhost:8080/api/v1/customer/1
+
+###
+# @name getCustomersV2
+GET localhost:8080/api/v2/customers
+
+###
+# @name getCustomerV2
+GET localhost:8080/api/v2/customers/321321
+
+###
+# @name createNewCustomerV2
+POST localhost:8080/api/v2/customers
+Content-Type: application/json
+
+{
+  "name": "Hao Jiang",
+  "password": "sdfasdf",
+  "id": 3,
+  "email": "hello@hao.me"
+}
+
+###
+# @name updateCustomerV2
+PUT localhost:8080/api/v2/customers
+Content-Type: application/json
+
+{
+  "name": "New Name",
+  "id": 10000,
+  "password": "new_password"
+}
+
+###
+# @name deleteCustomerV2
+DELETE localhost:8080/api/v2/customers/1
+
+###
+# @name customerApiExceptionV2
+GET localhost:8080/api/v2/customers/123/exception
+
+###
+# @name customerNotFoundExceptionV2
+GET localhost:8080/api/v2/customers/123
